@@ -1,0 +1,10 @@
+INSERT INTO `roles` (`id`, `name`) VALUES
+(1, 'Associate'),
+(2, 'ProjectManager'),
+(3, 'SubLOBLead'),
+(4, 'LOBLead'),
+(5, 'EDL'),
+(6, 'PDL'),
+(7, 'SBUHead'),
+(8, 'Admin');
+
