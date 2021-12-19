@@ -1,4 +1,4 @@
-INSERT INTO `roles` (`id`, `name`) VALUES
+INSERT INTO `role` (`id`, `name`) VALUES
 (1, 'Associate'),
 (2, 'ProjectManager'),
 (3, 'SubLOBLead'),
@@ -7,4 +7,22 @@ INSERT INTO `roles` (`id`, `name`) VALUES
 (6, 'PDL'),
 (7, 'SBUHead'),
 (8, 'Admin');
+
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (1,'P','Programmer');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (2,'PAT','PAT');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (3,'PT','Programmer Tranee');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (4,'PA','Programmer Analyst');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (5,'A','Associate');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (6,'SA','Senior Associate');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (7,'M','Manager');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (9,'SM','Senior Manager');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (10,'AD','Associate Director');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (11,'D','Director');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (12,'SD','Senior Director');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (13,'AVP','AVP');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (14,'VP','Vice President');
+INSERT INTO `grade`(`id`, `description`, `name`) VALUES (15,'SVP','SVP');
+
+
+INSERT INTO `user`(`id`, `email`, `is_active`, `is_approved`, `is_verified`, `password`, `user_name`, `verification_code`, `grade_id`, `manager_id`, `roleid`) VALUES (1,'admin@gmail.com',true,true,true,'India@123','admin','test',1,1,8)
 
