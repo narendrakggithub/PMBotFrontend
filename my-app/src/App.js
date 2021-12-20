@@ -11,6 +11,7 @@ import Home from "./components/home.component";
 import Profile from "./components/profile.component";
 import BoardUser from "./components/board-user.component";
 import Verify from "./components/verify.component";
+import CreateProject from "./components/createproject.component";
 
 // import AuthVerify from "./common/auth-verify";
 //import EventBus from "./common/EventBus";
@@ -74,6 +75,16 @@ class App extends Component {
                   User
                 </Link>
               </li>
+              
+            )}
+
+            {currentUser && (
+              <li className="nav-item">
+                <Link to={"/createproject"} className="nav-link">
+                  Create Project
+                </Link>
+              </li>
+              
             )}
           </div>
 
@@ -115,6 +126,7 @@ class App extends Component {
             <Route exact path="/profile" component={Profile} />
             <Route path="/user" component={BoardUser} />
             <Route path="/verify" component={Verify} />
+            <Route exact path="/createproject" component={CreateProject} />
         </Switch>     
         </div>
 

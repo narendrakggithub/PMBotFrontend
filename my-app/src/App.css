@@ -34,6 +34,22 @@
   font-style: oblique;
 }
 
+.formcss{
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  max-width: 600px; 
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color:   rgb(171, 44, 209);
+
+  border-radius: 25px;
+  position:sticky;
+  font-style: oblique;
+}
+
 .navbar{
   background-color:   rgb(171, 44, 209);
 }
